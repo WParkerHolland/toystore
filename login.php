@@ -1,5 +1,7 @@
 <?php
 
+  include("./includes/database-connection.php");
+
   /* TO-DO: Create a function called authenticate() that:
       1. Accepts $pdo, username, and password as parameters
       2. Queries the customer table to find a row matching the provided username and password
