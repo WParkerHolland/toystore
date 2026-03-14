@@ -9,11 +9,11 @@ use const Dom\STRING_SIZE_ERR;
 
 	function login($user)									// Remember user passed login
 	{
-    	session_regenerate_id(true); 						// Update session id
-
 	    $_SESSION['logged_in'] = true;						// Set logged_in key to true
 	    $_SESSION['username'] = $user['username'];			// Set username key to username from database 
 		$_SESSION['custID']   = $user['custID'];			// Set custID key to custID from database 
+
+		session_regenerate_id(true); 						// Update session id
 	}
 
 
