@@ -3,15 +3,7 @@
   /* TO-DO: Include header.php
             Hint: header.php is inside the includes folder and already connects to the database
   */
-  include("./includes/header.php");
-
-
-  
-  if ($logged_in) {                                       // If already logged in  
-    header('Location: profile.php');                     // Redirect to profile page 
-    exit;                                               // Stop further code running
-  }    
-
+  include("./includes/header.php"); 
 
 
   if ($_SERVER["REQUEST_METHOD"] == "POST") {         // Check if the form was submitted
@@ -36,6 +28,11 @@
       exit;                                 // Stop further code running 
     }
   }
+
+  if ($logged_in) {                                       // If already logged in  
+    header('Location: profile.php');                     // Redirect to profile page 
+    exit;                                               // Stop further code running
+  }   
 ?> 
 
 <div id="content" class="login-container animate-bottom">
