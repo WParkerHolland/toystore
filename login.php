@@ -32,6 +32,7 @@
 
     if ($user) {                               // If user data returned
       login($user);                           // Call the login function to update session data                                             
+      header_remove();
       header('Location: profile.php');       // Redirect to profile page
       exit;                                 // Stop further code running 
     }
