@@ -3,11 +3,13 @@
     /* TO-DO: Include database-connection.php to connect to the database
               Hint: Both header.php and database-connection.php are inside the includes folder
     */
+    include("database-connection.php");
 
 
     /* TO-DO: Include session.php to handle login sessions
               Hint: Both header.php and session.php are inside the includes folder
     */
+    include("session.php");
     
 
 ?>
@@ -45,7 +47,11 @@
                             Hint: Check session.php for a flag variable tracking login status
                                   Consider using the null-coalescing operator
                 -->
-                <li><a href="login.php">Log In</a></li>  
+                <?php if($logged_in) { ?>
+                    <li><a href="logout.php">Log Out</a></li> 
+                <?php } else { ?>
+                    <li><a href="login.php">Log In</a></li> 
+                <?php } ?> 
                  
             </ul>
         </nav>

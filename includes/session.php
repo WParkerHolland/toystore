@@ -1,5 +1,7 @@
 <?php
 
+use const Dom\STRING_SIZE_ERR;
+
 	session_start();										// Start/renew session									 	
 	$logged_in = $_SESSION['logged_in'] ?? false; 			// Is user logged in?      
 
@@ -47,6 +49,13 @@
           3. Executes the SQL query using the pdo() helper function and fetches the result
           4. Returns the matching user row if found
 	*/
+	function authenticate(PDO $pdo, string $username, string $password) {
+		$sql = "SELECT *
+				FROM customer
+				WHERE username= :uName and password= :uPass;";
+				
+		return pdo($pdo, $sql, ["uName" => $username, "uPass"=> $password])->fetch();
+	}
 	
 	
 ?>
