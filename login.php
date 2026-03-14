@@ -1,17 +1,9 @@
 <?php
-  /* TO-DO: Create a function called authenticate() that:
-          1. Accepts $pdo, username, and password as parameters
-          2. Queries the customer table to find a row matching the provided username and password
-          3. Executes the SQL query using the pdo() helper function and fetches the result
-          4. Returns the matching user row if found
-	*/
-	function authenticate(PDO $pdo, string $username, string $password) {
-		$sql = "SELECT *
-				FROM customer
-				WHERE username= :uName and password= :uPass;";
-				
-		return pdo($pdo, $sql, ["uName" => $username, "uPass"=> $password])->fetch();
-	}
+
+  /* TO-DO: Include header.php
+            Hint: header.php is inside the includes folder and already connects to the database
+  */
+  include("./includes/header.php");
 
 
   
@@ -44,11 +36,6 @@
       exit;                                 // Stop further code running 
     }
   }
-
-  /* TO-DO: Include header.php
-            Hint: header.php is inside the includes folder and already connects to the database
-  */
-  include("./includes/header.php");
 ?> 
 
 <div id="content" class="login-container animate-bottom">
