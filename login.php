@@ -32,8 +32,7 @@
 
     if ($user) {                               // If user data returned
       login($user);                           // Call the login function to update session data
-      echo '<script>window.location.href = "https://parkerholland04.rhody.dev/toystore/profile.php";</script>';
-      //header('Location: profile.php');       // Redirect to profile page
+      header('Location: profile.php');       // Redirect to profile page
       exit;                                 // Stop further code running 
     }
   }

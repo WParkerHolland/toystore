@@ -55,19 +55,6 @@
 
 	<?php } ?>
 
-    <!-- TO-DO: Display the rest of the toys in the database
-
-                Hint 1: You could copy/paste the toy-card block for each toy, but this would be repetitive.
-
-                Hint 2: Instead, how could you modify the get_toy() function so it returns ALL toys
-                        from the database instead of just one?
-
-                Hint 3: Once you have an array of toys, how could you use a PHP loop to display
-                        each toy inside a toy-card?
-    -->
-
-
-
 </section>
 
 <?php include 'includes/footer.php'; ?>

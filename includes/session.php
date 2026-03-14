@@ -22,8 +22,7 @@ use const Dom\STRING_SIZE_ERR;
 	function require_login($logged_in)						// Check if user logged in				
 	{
 	    if ($logged_in == false) {							// If not logged in						
-	    	echo '<script>window.location.href = "https://parkerholland04.rhody.dev/toystore/login.php";</script>';    
-		//header('Location: login.php');					// Send to login page 			
+	    	header('Location: login.php');					// Send to login page 			
 	        exit;    										// Stop rest of page running								
 	    }
 	}

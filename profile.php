@@ -8,7 +8,7 @@
 
 
             
-	//require_login($logged_in);                              // Redirect user if not logged in
+	require_login($logged_in);                              // Redirect user if not logged in
 	$username = $_SESSION['username'];                      // Retrieve the username from the session data
     $custID   = $_SESSION['custID'];                        // Retrieve the custID from the session data
 
