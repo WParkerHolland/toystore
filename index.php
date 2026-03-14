@@ -4,7 +4,7 @@
               Hint: header.php is inside the includes folder and already connects to the database
     */
 
-	include("includes\header.php");
+	include("./includes/header.php");
 
     /*
 	 * Retrieve toy information from the database based on the toy ID.

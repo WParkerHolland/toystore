@@ -4,7 +4,7 @@
               Hint: header.php is inside the includes folder and already connects to the database
     */
 
-    include("includes\header.php");
+    include("./includes/header.php");
 
     // Retrieve the value of the 'toynum' parameter from the URL query string
 	//          Example URL: .../toy.php?toynum=0001

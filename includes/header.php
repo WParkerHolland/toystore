@@ -3,13 +3,13 @@
     /* TO-DO: Include database-connection.php to connect to the database
               Hint: Both header.php and database-connection.php are inside the includes folder
     */
-    include("database-connection.php");
+    include("./database-connection.php");
 
 
     /* TO-DO: Include session.php to handle login sessions
               Hint: Both header.php and session.php are inside the includes folder
     */
-    include("session.php");
+    include("./session.php");
     
 
 ?>

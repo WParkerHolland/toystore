@@ -3,7 +3,7 @@
     /* TO-DO: Include header.php
             Hint: header.php is inside the includes folder and already connects to the database
     */
-    include("includes/header.php");
+    include("./includes/header.php");
 
 
 
