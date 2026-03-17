@@ -56,16 +56,3 @@ use const Dom\STRING_SIZE_ERR;
 				
 		return pdo($pdo, $sql, ["uName" => $username, "uPass"=> $password])->fetch();
 	}
-	
-	
-?>
-
-
-
-
-
-
-
-
-
-

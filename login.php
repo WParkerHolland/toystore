@@ -1,10 +1,7 @@
 <?php
 
-  /* TO-DO: Include header.php
-            Hint: header.php is inside the includes folder and already connects to the database
-  */
-  include("./includes/header.php");
-
+  require_once('includes/database-connection.php');
+  require_once('includes/session.php');
 
   
   if ($logged_in) {                                       // If already logged in  
@@ -35,6 +32,11 @@
       header('Location: profile.php');       // Redirect to profile page
       exit;                                 // Stop further code running 
     }
+
+    /* TO-DO: Include header.php
+            Hint: header.php is inside the includes folder and already connects to the database
+    */
+    include("./includes/header.php");
   }
 ?> 
 
